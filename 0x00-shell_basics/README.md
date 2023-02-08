@@ -8,3 +8,4 @@
 * 6-firstdirectory: Create a directory named my_first_directory in the /tmp/ directory.
 * 7-movethatfile: Move the file betty from /tmp/ to /tmp/my_first_directory.
 * 8-firstdelete: Delete the file /tmp/my_first_directory/betty.
+* 9-firstdirdeletion: Delete the directory /tmp/my_first_directory.
