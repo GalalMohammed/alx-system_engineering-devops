@@ -22,3 +22,4 @@
 > Files and directories starting with a dot (.) are listed.
 > The listing is alpha ordered, except for the directories . and .. which are listed at the very beginning.
 > Only digits and letters are used to sort; Digits come first.
+* school.mgc: A magic file that can be used with the command file to detect School data files. School data files always contain the string SCHOOL at offset 0.
