@@ -34,3 +34,10 @@
 > Hidden files are listed.
 > One file name per line.
 > The listing ends with a new line.
+* 101-gifs: List all the files with a .gif extension in the current directory and all its sub-directories.
+> Hidden files are listed.
+> Only regular files (not directories) are listed.
+> The names of the files are displayed without their extensions.
+> The files are sorted by byte values, but case-insensitive (file aaa should be listed before file bbb, file .b should be listed before file a, and file Rona should be listed after file jay).
+> One file name per line.
+> The listing ends with a new line.
