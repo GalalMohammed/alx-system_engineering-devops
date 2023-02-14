@@ -29,3 +29,8 @@
 * 20-hiago: Remove all letters c and C from input.
 * 21-reverse: Reverse its input.
 * 22-users_and_homes: Display all users and their home directories, sorted by users.
+* 100-empty_casks: Find all empty files and directories in the current directory and all sub-directories.
+> Only the names of the files and directories are displayed (not the entire path).
+> Hidden files are listed.
+> One file name per line.
+> The listing ends with a new line.
