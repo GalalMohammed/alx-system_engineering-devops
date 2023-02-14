@@ -42,3 +42,4 @@
 > One file name per line.
 > The listing ends with a new line.
 * 102-acrostic: Decode acrostics that use the first letter of each line. The ‘decoded’ message ends with a new line.
+* 103-the_biggest_fan: Parse web servers logs in TSV format as input and display the 11 hosts or IP addresses which did the most requests. Order by number of requests, most active host or IP at the top.
