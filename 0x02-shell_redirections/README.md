@@ -16,3 +16,7 @@
 * 12-newest_files: Display the 10 newest files in the current directory.
 > One file per line.
 > Sorted from the newest to the oldest.
+* 13-unique: Take a list of words as input and prints only words that appear exactly once.
+> Input format: One line, one word.
+> Output format: One line, one word.
+> Words are sorted.
