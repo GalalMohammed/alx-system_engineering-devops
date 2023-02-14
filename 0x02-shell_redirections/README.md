@@ -13,3 +13,6 @@
 * 11-directories: Count the number of directories and sub-directories in the current directory.
 > The current and parent directories are not taken into account.
 > Hidden directories are counted.
+* 12-newest_files: Display the 10 newest files in the current directory.
+> One file per line.
+> Sorted from the newest to the oldest.
