@@ -41,3 +41,4 @@
 > The files are sorted by byte values, but case-insensitive (file aaa should be listed before file bbb, file .b should be listed before file a, and file Rona should be listed after file jay).
 > One file name per line.
 > The listing ends with a new line.
+* 102-acrostic: Decode acrostics that use the first letter of each line. The ‘decoded’ message ends with a new line.
