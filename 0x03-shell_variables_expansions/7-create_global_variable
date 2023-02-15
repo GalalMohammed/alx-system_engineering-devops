@@ -1,2 +1,2 @@
 #!/bin/bash
-echo BEST=School >> /etc/bash.bachrc
+echo BEST=School >> /etc/bachrc
