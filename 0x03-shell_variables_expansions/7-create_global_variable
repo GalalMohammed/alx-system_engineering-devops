@@ -1,2 +1,2 @@
 #!/bin/bash
-echo BEST=School >> /etc/bachrc
+echo export BEST=School >> /etc/bachrc
