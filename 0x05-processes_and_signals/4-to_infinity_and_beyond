@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# displays To infinity and beyond, use ctrl+c to kill the script
+while :
+do
+	echo To infinity and beyond
+	sleep 2
+done
