@@ -2,8 +2,8 @@
 # FizzBuzz
 for i in {1..100}
 do
-	((rem5=$i%5))
-	((rem3=$i%3))
+	((rem5=i%5))
+	((rem3=i%3))
 	if [ "$rem5" = 0 ] && [ "$rem3" = 0 ]
 	then
 		echo FizzBuzz
