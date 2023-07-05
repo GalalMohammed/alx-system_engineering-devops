@@ -5,3 +5,4 @@
 * 3-repetition_token_2.rb: match hbt+n
 * 4-repetition_token_3.rb: match hbt\*n
 * 5-beginning_and_end.rb: match ^h.n$
+* 6-phone_number.rb: match ^\d{10}$
