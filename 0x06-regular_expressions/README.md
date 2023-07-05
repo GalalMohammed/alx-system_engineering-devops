@@ -6,3 +6,4 @@
 * 4-repetition_token_3.rb: match hbt\*n
 * 5-beginning_and_end.rb: match ^h.n$
 * 6-phone_number.rb: match ^\d{10}$
+* 7-OMG_WHY_ARE_YOU_SHOUTING.rb: match [A-Z]
