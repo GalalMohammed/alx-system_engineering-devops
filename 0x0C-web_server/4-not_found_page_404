@@ -4,6 +4,7 @@ apt-get -y update
 apt-get -y install nginx
 ufw allow 'Nginx HTTP'
 echo "Hello World!" > /var/www/html/index.html
+echo "Ceci n'est pas une page" > /var/www/html/custom_404.html
 line="server_name _;"
 redirection="server_name _;\nrewrite ^\/redirect_me https:\/\/www.youtube.com\/ permanent;"
 sed -i "s/$line/$redirection/" /etc/nginx/sites-available/default
