@@ -9,5 +9,5 @@ line="server_name _;"
 redirection="server_name _;\nrewrite ^\/redirect_me https:\/\/www.youtube.com\/ permanent;"
 sed -i "s/$line/$redirection/" /etc/nginx/sites-available/default
 sed -i "s/$line/$line\nerror_page 404 \/custom_404.html;/" /etc/nginx/sites-available/default
-# sed -i "s/$line/$line\nadd_header X-Served-By $hostname;/" /etc/nginx/sites-available/default
+sed -i "s/$line/$line\nadd_header X-Served-By \$hostname;/" /etc/nginx/sites-available/default
 service nginx restart
