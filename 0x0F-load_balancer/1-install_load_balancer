@@ -3,7 +3,7 @@
 apt-get install --no-install-recommends -y software-properties-common
 add-apt-repository -y ppa:vbernat/haproxy-2.8
 apt-get -y update
-apt-get install -y haproxy
+apt-get install -y haproxy=2.8.\*
 echo "ENABLED=1" >> /etc/default/haproxy
 cfg="\
 frontend web-frontend
