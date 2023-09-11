@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 # Nginx must be running, and listening on port 80 of all the server’s active IPv4 IPs
-sed -i "s/8080/80/" /etc/nginx/sites-enabled/default
-sed -i "s/8080/80/" /etc/nginx/sites-available/default
+systemctl stop nginx
+apt-get purge nginx
+apt-get autoremove
+rm -rf /etc/nginx /var/log/nginx
+apt-get -y update
+apt-get -y install nginx
 service nginx restart
