@@ -16,10 +16,10 @@ if __name__ == '__main__':
     # Fetch TODO list and user name
     todo = requests.get(
             f'https://jsonplaceholder.typicode.com/todos?userId={sys.argv[1]}',
-            timeout=.1).json()
+            timeout=1).json()
     user_name = requests.get(
             f'https://jsonplaceholder.typicode.com/users/{sys.argv[1]}',
-            timeout=.1).json()['name']
+            timeout=1).json()['username']
 
     # Create a CSV file
     with open(sys.argv[1] + '.csv', 'w', encoding='utf-8') as file:

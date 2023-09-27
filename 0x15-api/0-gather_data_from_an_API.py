@@ -14,10 +14,10 @@ if __name__ == '__main__':
     # Fetch TODO list and user name
     todo = requests.get(
             f'https://jsonplaceholder.typicode.com/todos?userId={sys.argv[1]}',
-            timeout=.1).json()
+            timeout=1).json()
     user_name = requests.get(
             f'https://jsonplaceholder.typicode.com/users/{sys.argv[1]}',
-            timeout=.1).json()['name']
+            timeout=1).json()['name']
     completed_tasks = [task for task in todo if task['completed']]
 
     # Display progress information
