@@ -6,19 +6,21 @@ Example:
 
 """
 
-import requests
 import sys
+import requests
 
 
 if __name__ == '__main__':
     # Fetch TODO list and user name
     todo = requests.get(
-            f'https://jsonplaceholder.typicode.com/todos?userId={sys.argv[1]}'
-            ).json()
+            f'https://jsonplaceholder.typicode.com/todos?userId={sys.argv[1]}',
+            timeout=.1).json()
     user_name = requests.get(
-            f'https://jsonplaceholder.typicode.com/users/{sys.argv[1]}'
-            ).json()['name']
+            f'https://jsonplaceholder.typicode.com/users/{sys.argv[1]}',
+            timeout=.1).json()['name']
     completed_tasks = [task for task in todo if task['completed']]
+
+    # Display progress information
     print(f'Employee {user_name} is done with tasks' +
           f'({len(completed_tasks)}/{len(todo)}):')
     for task in completed_tasks:
