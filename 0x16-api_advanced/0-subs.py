@@ -22,4 +22,4 @@ def number_of_subscribers(subreddit: str) -> int:
     # Send a GET request to the Reddit API
     response = requests.get(f"https://www.reddit.com/r/{subreddit}/about.json",
                             timeout=1, headers={"User-Agent": 'Galal'})
-    return response.json().get("data").get("subscribers", 0)
+    return response.json().get("data", {}).get("subscribers", 0)
