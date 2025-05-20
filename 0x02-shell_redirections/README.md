@@ -1,4 +1,8 @@
 # 0x02 Shell Redirections
+
+[Shell, I/O Redirection](https://linuxcommand.org/lc3_lts0070.php)
+[Special Characters](https://mywiki.wooledge.org/BashGuide/SpecialCharacters)
+
 * 0-hello_world: Print “Hello, World”, followed by a new line to the standard output.
 * 1-confused_smiley: Display a confused smiley "(Ôo)'.
 * 2-hellofile: Display the content of the /etc/passwd file.
